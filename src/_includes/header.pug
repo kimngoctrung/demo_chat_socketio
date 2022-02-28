@@ -1,0 +1,76 @@
+//- Header block
+header.header
+  .container.large 
+    .logo
+      a(href="./")
+        img(src="./assets/img/images/logo.png", alt="Resilient Forestry" width="150")
+    .main-nav
+      .block-login.sp
+        .login-button 
+          a.btn.btn-light(href="./login.html") Login
+      ul.global-nav
+        li
+          if menu_name == "home"
+            a(href="./").active HOME
+          else
+            a(href="./") HOME
+        li
+          if menu_name == "services"
+            a(href="javascript:void(0)").active SERVICES
+          else
+            a(href="javascript:void(0)") SERVICES
+          ul.sub-menu 
+            li.sub-menu-item 
+              a.sub-menu-link(href="./services.html") Stewardship
+              span.sub-menu-desc Mea aeterno eleifen ntiopam ad, nam no suscipitquaeren.
+            li.sub-menu-item 
+              a.sub-menu-link(href="./services.html") Planning & Adaptive Management
+              span.sub-menu-desc Mea aeterno eleifen ntiopam ad, nam no suscipitquaeren.
+            li.sub-menu-item 
+              a.sub-menu-link(href="./services.html") Science
+              span.sub-menu-desc Mea aeterno eleifen ntiopam ad, nam no suscipitquaeren.
+            li.sub-menu-item 
+              a.sub-menu-link(href="./services.html") Timber
+              span.sub-menu-desc Mea aeterno eleifen ntiopam ad, nam no suscipitquaeren.
+            li.sub-menu-item 
+              a.sub-menu-link(href="./services.html") Geospatial and Software
+              span.sub-menu-desc Mea aeterno eleifen ntiopam ad, nam no suscipitquaeren.
+        li
+          if menu_name == "about"
+            a(href="javascript:void(0)").active ABOUT
+          else
+            a(href="javascript:void(0)") ABOUT
+          ul.sub-menu 
+            li.sub-menu-item 
+              a.sub-menu-link(href="./vision.html") Mission/ Vision
+              span.sub-menu-desc Mea aeterno eleifen ntiopam ad, nam no suscipitquaeren.
+            li.sub-menu-item 
+              a.sub-menu-link(href="./diversity.html") Diversity
+              span.sub-menu-desc Mea aeterno eleifen ntiopam ad, nam no suscipitquaeren.
+            li.sub-menu-item 
+              a.sub-menu-link(href="./members.html") Members
+              span.sub-menu-desc Mea aeterno eleifen ntiopam ad, nam no suscipitquaeren.
+        li
+          if menu_name == "blog"
+            a(href="./blog.html").active BLOG
+          else
+            a(href="./blog.html") BLOG
+        li
+          if menu_name == "careers"
+            a(href="./careers.html").active CAREERS
+          else
+            a(href="./careers.html") CAREERS
+        li
+          if menu_name == "contact"
+            a(href="#contact-section").active CONTACT
+          else
+            a(href="#contact-section") CONTACT
+    .account-buttons
+      .login-button 
+        a.btn.btn-light(href="./login.html") Login
+    #menu-toggle
+      span
+      span
+      span
+      span
+// END: header
